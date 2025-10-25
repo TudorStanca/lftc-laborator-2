@@ -1,0 +1,21 @@
+automat = numar_stari lista_stari numar_simboluri lista_simboluri stare_initiala numar_stari_finale lista_stari_finale numar_tranzitii lista_tranzitii
+
+numar_stari = numar
+lista_stari = { stare }
+stare = "q", { cifra_cu_0 }
+
+numar_simboluri = numar
+lista_simboluri = { simbol }
+simbol = { CHAR }
+
+stare_initiala = stare
+
+numar_stari_finale = numar
+lista_stari_finale = { stare }
+
+numar_tranzitii = numar
+lista_tranzitii = { stare simbol stare }
+
+cifra = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+cifra_cu_0 = cifra | "0" ;
+numar = cifra, { cifra_cu_0 }
