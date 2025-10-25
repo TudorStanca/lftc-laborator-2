@@ -44,6 +44,7 @@ AF loadFromFile(const string& path) {
 	for (int i = 0; i < nFinalStates; ++i) {
 		fin >> buffer;
 		finalStates.insert(buffer);
+		states.insert(buffer);
 	}
 
 	fin >> nTransitions;
@@ -53,6 +54,9 @@ AF loadFromFile(const string& path) {
 		char symbol;
 		fin >> fromState >> symbol >> toState;
 		transitionFunction[{fromState, symbol}].insert(toState);
+		states.insert(fromState);
+		states.insert(toState);
+		alphabet.insert(symbol);
 	}
 
 	return AF{ states, alphabet, initialState, finalStates, transitionFunction };
@@ -100,6 +104,7 @@ AF readFromConsole() {
 
 	while (iss3 >> q) {
 		finalStates.insert(q);
+		states.insert(q);
 	}
 
 	cout << "Introduceti tranzitii (format: from simbol to), o linie goala = stop\n";
@@ -127,6 +132,9 @@ AF readFromConsole() {
 		}
 
 		transitionFunction[{fromState, symbol[0]}].insert(toState);
+		states.insert(fromState);
+		states.insert(toState);
+		alphabet.insert(symbol[0]);
 	}
 
 	return AF{ states, alphabet, initialState, finalStates, transitionFunction };
