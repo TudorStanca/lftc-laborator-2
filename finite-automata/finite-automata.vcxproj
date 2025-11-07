@@ -133,6 +133,7 @@
   <ItemGroup>
     <Text Include="activitate.txt" />
     <Text Include="finput.txt" />
+    <Text Include="idinput.txt" />
     <Text Include="input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
