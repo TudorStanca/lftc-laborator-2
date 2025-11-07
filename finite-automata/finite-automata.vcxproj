@@ -131,6 +131,7 @@
     <ClInclude Include="AF.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="activitate.txt" />
     <Text Include="input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

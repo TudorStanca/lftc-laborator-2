@@ -1,12 +1,13 @@
-20
-q0 q1 q2 q3 q4 q5 q6 q7 ls ls2 Ls Ls2 zs uf us lf lf2 Lf Lf2 zf
-30
-0 1 2 3 4 5 6 7 8 9 x X a b c d e f A B C D E F u U l L z Z
+22
+q0 q1 q2 q3 q4 q5 q6 q7 ls ls2 Ls Ls2 zs uf us lf lf2 Lf Lf2 zf minus zero
+31
+0 1 2 3 4 5 6 7 8 9 x X a b c d e f A B C D E F u U l L z Z -
 q0
 17
-q1 q3 q5 q6 q7 ls ls2 Ls Ls2 zs uf us lf lf2 Lf Lf2 zf
-136
-q0 0 q1
+zero q3 q5 q6 q7 ls ls2 Ls Ls2 zs uf us lf lf2 Lf Lf2 zf
+151
+q0 - minus
+q0 0 zero
 q0 1 q6
 q0 2 q6
 q0 3 q6
@@ -16,6 +17,22 @@ q0 6 q6
 q0 7 q6
 q0 8 q6
 q0 9 q6
+
+zero x q4
+zero X q4
+zero b q7
+zero B q7
+
+minus 1 q6
+minus 2 q6
+minus 3 q6
+minus 4 q6
+minus 5 q6
+minus 6 q6
+minus 7 q6
+minus 8 q6
+minus 9 q6
+minus 0 q1
 
 q1 x q4
 q1 X q4
